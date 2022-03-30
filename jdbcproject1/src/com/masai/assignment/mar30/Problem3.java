@@ -1,0 +1,52 @@
+package com.masai.assignment.mar30;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class Problem3 {
+
+	public static void main(String[] args) {
+		
+		Scanner scn=new Scanner(System.in);
+		System.out.println("Enter bonus amount");
+		int bonus=scn.nextInt();
+		
+
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		String url="jdbc:mysql://localhost:3306/db1";
+		
+	try(Connection conn=DriverManager.getConnection(url, "root", "root")) {
+		
+	PreparedStatement pstmt = conn.prepareStatement("update employee set salary=salary+?");
+	
+	
+	pstmt.setInt(1, bonus);
+	
+	int result=pstmt.executeUpdate();
+	if(result>0) {
+		System.out.println("bonus added to all employees");
+	}
+	else {
+		System.out.println("bonus is not added");
+	}
+	
+	
+	} catch (SQLException e) {
+		e.printStackTrace();
+	}
+
+}
+
+
+}
+
+
