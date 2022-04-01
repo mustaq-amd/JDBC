@@ -13,19 +13,18 @@ public class DBUtil {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		String url="jdbc:mysql://localhost:3306/training";
+		String url="jdbc:mysql://localhost:3306/db1";
 		
 		try {
 			conn=DriverManager.getConnection(url, "root", "root");
-			
 		} catch (SQLException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
 		
 		return conn;
 	}
