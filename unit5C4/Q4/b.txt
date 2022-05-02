@@ -1,0 +1,4 @@
+Caching is a process of copying files in the temporary storage to access them quickly.
+
+Example : If an user making a same request repeatedly. Instead of going to server and fetch the data, it stores the data in cache memory
+and fetch from it. It increases the performance of th application

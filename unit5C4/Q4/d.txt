@@ -1,0 +1,6 @@
+Public key & Private key
+-------------------------
+
+Cryptographic algorithms are use to generate public & private key pairs.
+Each public key comes pair with unique private key. Private key must kept private and public key can share with everyone else.
+The user uses private key and recievers public key to encrypt the message . Tsis message only be decrypted with recievers private key.

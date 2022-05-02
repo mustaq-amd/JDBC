@@ -1,0 +1,34 @@
+CAP Theorem
+-------------
+
+CAP stands for Consistency, Availability, and Partition tolerance. 
+
+The theorem states that a distributed system cannot guarantee all three (consistency, availability, and partition tolerance) all the time.
+When things go wrong, needs to prioritize at most two characteristics of distributed systems to keep.
+
+Consistency
+------------
+
+Consistency means all the nodes will have consistent data which means same data will be replicate dto all the node
+
+Availability
+-------------
+Availability means that each request gives an appropriate response. High availability systems achieve responsiveness through replication.
+They duplicate data across multiple nodes so they are available to take read or write requests.
+
+Availabile system makes no consistency guarantee. It guarantee that all the requests will be processed but not the latest data will be fetched.
+
+Partition tolerance
+-------------------
+
+Partition tolerance refers to the ability of a distributed system to perform normally at the time of network failures.
+A network partition is the technical term of a network failure - the entire network is partitioned into subnetworks because one or two
+nodes lost communication between them.
+The partition tolerance guarantee promises that users sending  requests to the system will not be affected by network partitions.
+From an external user view, the system will behave as if no single node has failed.
+
+Scenario :-
+---------
+
+When an application has an huge data, If the data is growing very largely day by day. where an application does not need consistency of data but
+data availability is preferreable then we go for CAP theorem.

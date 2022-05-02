@@ -1,0 +1,9 @@
+Web sockets are defined as a bi-directional, full duplex communications protocol. Both the client and server exchange the data at same time.
+
+Usage: 
+
+Web sockets are used in such type of applications where client need to react quicky to change.
+
+Example: 
+
+Chat application where user can sebd and recieve messages in real time

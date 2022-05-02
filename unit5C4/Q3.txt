@@ -1,0 +1,52 @@
+Operating System
+------------------
+
+Operating System is an interface between a user and system hardware.
+
+Example : Windows, MacOS, Unix
+
+Features
+--------
+-> Memory Management
+-> Processor Management
+-> Device Management
+-> File Management
+-> Security
+-> System Performance
+-> Process Scheduling
+
+Memory Management
+------------------
+
+It refers to the management of Primary memory or Main Memory. Any program to be executed it must be in main memory.
+Operating System keeps track of primary memory. It allocates and de-allocates memory to the processes when they need and and no longer needs
+respectively.
+
+Processor Management
+---------------------
+
+In Multi-Threading OS decides which process get the Processor and for how much time.
+It keeps track of processor and the status of the process. It allocates and de-allocates processor to the process.
+
+Device management
+------------------
+
+OS manages device communication via their respective drivers.
+It keeps tracks of all the devices. It decides which process gets the device and for how much time. It allocates and de-allocates device
+in efficient way.
+
+File Management
+----------------
+
+Os take care of file management in the form of directories and organize them for easy navigation and usage.
+It keeps track of information, location, user, status etc. The collective facilities are  known as file system.
+It allocates and de-allocates the resources.
+
+Security
+--------
+It gives an security layer in the form of access the system through password. It prevents unauthorized access to the system.
+
+Process Scheduling
+-------------------
+It keeps track of time  and resources used by various jobs and users.
+
